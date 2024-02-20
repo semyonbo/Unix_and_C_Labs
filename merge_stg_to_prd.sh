@@ -11,7 +11,7 @@ version=$(date +'%Y%m%d%H%M%S')
 git tag -a "v$version" -m "Release version $version"
 
 # Записываем изменения
-git push origin stg --tags
+git push origin prd --tags
 
-# Возвращаемся на ветку dev
-git checkout prd
+# Возвращаемся на ветку stg
+git checkout stg
